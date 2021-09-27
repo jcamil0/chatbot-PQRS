@@ -1,0 +1,53 @@
+{
+  "luis_schema_version": "3.2.0",
+  "name": "Booking",
+  "versionId": "0.1",
+  "desc": "Booking Hotel LUIS application",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "RoomAvailability"
+    }
+  ],  
+  "entities": [],
+  "closedLists": [],
+  "composites": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "regex_features": [],
+  "model_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "availability?",
+      "intent": "RoomAvailability",
+      "entities": []
+    },
+    {
+      "text": "room availability",
+      "intent": "RoomAvailability",
+      "entities": []
+    },
+    {
+      "text": "Are there any rooms available?",
+      "intent": "RoomAvailability",
+      "entities": []
+    },
+    {
+      "text": "Which days do you have available rooms?",
+      "intent": "RoomAvailability",
+      "entities": []
+    },
+    {
+      "text": "availability",
+      "intent": "RoomAvailability",
+      "entities": []
+    },
+    {
+      "text": "Do you have available rooms?",
+      "intent": "RoomAvailability",
+      "entities": []
+    }
+  ]
+}

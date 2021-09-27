@@ -1,0 +1,234 @@
+{
+  "luis_schema_version": "3.2.0",
+  "name": "Booking",
+  "versionId": "0.1",
+  "desc": "Booking Hotel LUIS application",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "BookDetails"
+    }
+  ],  
+  "entities": [
+    {
+      "name": "quantity",      
+      "roles": []
+    },
+    {
+      "name": "category",
+      "roles": []
+    },
+    {
+      "name": "datechi",
+      "roles": []
+    }
+  ],
+  "closedLists": [],
+  "composites": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    }
+  ],
+  "regex_features": [],
+  "model_features": [],
+  "patterns": [],
+  "utterances": [    
+    {
+      "text": "i want to book a room",
+      "intent": "BookDetails",
+      "entities": []
+    },
+    {
+      "text": "I want to rent a room. Do you have any available.",
+      "intent": "BookDetails",
+      "entities": []
+    },
+    {
+      "text": "i want a room for me",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "quantity",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i want to book a room",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "quantity",
+          "startPos": 15,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i want to book two rooms",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "quantity",
+          "startPos": 15,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "i want an Executive Double Room",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "category",
+          "startPos": 10,
+          "endPos": 30
+        },
+        {
+          "entity": "quantity",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "can i book two executive double rooms ?",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "category",
+          "startPos": 15,
+          "endPos": 36
+        },
+        {
+          "entity": "quantity",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "can i book one superior deluxe double room ?",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "category",
+          "startPos": 15,
+          "endPos": 41
+        },
+        {
+          "entity": "quantity",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "do you have available any Executive Double rooms? ",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "category",
+          "startPos": 26,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i want one adlon executive suite",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "quantity",
+          "startPos": 7,
+          "endPos": 9
+        },
+        {
+          "entity": "category",
+          "startPos": 11,
+          "endPos": 31
+        }
+      ]
+    }, 
+    {
+      "text": "can i book nine junior unter den linden suites ?",
+      "intent": "BookDetails",
+      "entities": [       
+        {
+          "entity": "quantity",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "category",
+          "startPos": 16,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "can i book nine linden suites ?",
+      "intent": "BookDetails",
+      "entities": [        
+        {
+          "entity": "quantity",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "category",
+          "startPos": 16,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "do you have available four deluxe single rooms?",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "category",
+          "startPos": 27,
+          "endPos": 45
+        },
+        {
+          "entity": "quantity",
+          "startPos": 22,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i want three junior suites.",
+      "intent": "BookDetails",
+      "entities": [
+        {
+          "entity": "category",
+          "startPos": 13,
+          "endPos": 25
+        },
+        {
+          "entity": "quantity",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "i want one room from 05/02/21.",
+      "intent": "BookDetails",
+      "entities": [        
+        {
+          "entity": "quantity",
+          "startPos": 7,
+          "endPos": 9
+        }
+      ]
+    }
+  ]
+}
